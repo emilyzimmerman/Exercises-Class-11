@@ -6,12 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  height:number = 120;
-  width: number = 300;
+    clickLog = console.log('Hello World!')
+  }
 
-constructor(){
-  setTimeout(() => {
-    this.width = 500
-  }, 1000);
-}
-}
