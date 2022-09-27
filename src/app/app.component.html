@@ -1,10 +1,2 @@
-
-<div>
-  <input type="text"
-  [disabled] = "isDisabled">
-
-  <!-- Event Listener -->
-<button (click)="isToggle()">Click me to change the value of isDisabled</button>
-</div>
-
-<p>{{isDisabled ? 'Currently Disabled' : 'Not Currently Disabled'}}</p>
+<h1>{{title}}</h1>
+<input type="text" [(ngModel)]="title">
