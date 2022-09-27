@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Exercises';
-  heading: string = 'user post';
-  num: number = 1;
+  height:number = 120;
+  width: number = 300;
+
+constructor(){
+  setTimeout(() => {
+    this.width = 500
+  }, 1000);
+}
 }
