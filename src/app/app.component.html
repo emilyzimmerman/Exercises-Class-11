@@ -1,3 +1,10 @@
-<div class="contianer">
-  <button (click)="clickLog()">Click me to log to the console</button>
+
+<div>
+  <input type="text"
+  [disabled] = "isDisabled">
+
+  <!-- Event Listener -->
+<button (click)="isToggle()">Click me to change the value of isDisabled</button>
 </div>
+
+<p>{{isDisabled ? 'Currently Disabled' : 'Not Currently Disabled'}}</p>

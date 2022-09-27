@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    clickLog() {
-      console.log('Hello World!')
-    };
+  isDisabled:boolean = true;
+  isToggle(){
+    this.isDisabled = !this.isDisabled;
+  };
   }
 
