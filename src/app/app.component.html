@@ -1,5 +1,1 @@
-<div class="container">
-<p *ngIf="isShowContent; else showElse">If isShowContent is true, show me!</p>
-<ng-template #showElse>Use else to show me</ng-template>
-</div>
-
+<p [style.background-color]="myColor">This should change when we implement ngStyle!</p>
