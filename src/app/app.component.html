@@ -1,1 +1,4 @@
-<p [style.background-color]="myColor">This should change when we implement ngStyle!</p>
+<div class ='container'>
+  <input type="color" [(ngModel)] = 'changeColor'>
+  <p [ngStyle]="{color: changeColor}">This is the color</p>
+</div>
