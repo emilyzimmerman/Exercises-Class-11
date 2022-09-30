@@ -1,3 +1,4 @@
 <div class="container">
-  <button [disabled] = "isDisabled">Hello World</button>
+<p *ngIf="isShow; else showElse">"Show me when isShow is true! Otherwise, don't show me!"</p>
+<ng-template #showElse>This is false</ng-template>
 </div>
