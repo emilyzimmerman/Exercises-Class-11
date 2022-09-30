@@ -1,4 +1,5 @@
 <div class="container">
-<p *ngIf="isShow; else showElse">"Show me when isShow is true! Otherwise, don't show me!"</p>
-<ng-template #showElse>This is false</ng-template>
+<p *ngIf="isShowContent; else showElse">If isShowContent is true, show me!</p>
+<ng-template #showElse>Use else to show me</ng-template>
 </div>
+
